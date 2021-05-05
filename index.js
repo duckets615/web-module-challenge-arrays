@@ -127,8 +127,10 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-const removeFlavorByName = (ar,idx) => [...ar.slice(0,idx), ...ar.slice(idx+1)];
-// const removeFlavorByName = (ar,idx) => ar.slice(0,idx).concat(ar.slice(idx+1));
+function removeFlavorByName(ar,flavor) {
+    let idx = ar.indexOf(flavor);
+    return ar.slice(0,idx).concat(ar.slice(idx+1))
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -151,8 +153,13 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(ar, str){
+    let array = [];
+    let length = ar.length;
+    for (let i = 0; i < length; i++) {
+        if (ar[i].includes(str)) array.push(ar[i])
+    }
+    return array;
 }
 
 
@@ -273,23 +280,23 @@ const regionalFlavors = [
 
 
 
-// /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
-// function foo(){
-//     return 'bar';
-// }
+/* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
+function foo(){
+    return 'bar';
+}
 
-// export default{
-//     foo,
-//     is31Flavors,
-//     addFlavor,
-//     removeLastFlavor,
-//     getFlavorByIndex,
-//     removeFlavorByName,
-//     copy,
-//     filterByWord,
-//     getAverageWordLength,
-//     getRandomFlavors
-// }
+export default{
+    foo,
+    is31Flavors,
+    addFlavor,
+    removeLastFlavor,
+    getFlavorByIndex,
+    removeFlavorByName,
+    copy,
+    filterByWord,
+    getAverageWordLength,
+    getRandomFlavors
+}
 
 
 
