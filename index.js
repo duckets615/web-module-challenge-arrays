@@ -127,10 +127,8 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
-}
-
+const removeFlavorByName = (ar,idx) => [...ar.slice(0,idx), ...ar.slice(idx+1)];
+// const removeFlavorByName = (ar,idx) => ar.slice(0,idx).concat(ar.slice(idx+1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀

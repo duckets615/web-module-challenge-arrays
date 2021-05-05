@@ -1,3 +1,2 @@
-const addFlavor = (ar,str) => ar.unshift(str);
-
-console.log(addFlavor([1,2,3,4], 5));
+// const removeFlavorByName = (ar,idx) => [...ar.slice(0,idx), ...ar.slice(idx+1)];
+const removeFlavorByName = (ar,idx) => ar.slice(0,idx).concat(ar.slice(idx+1));
