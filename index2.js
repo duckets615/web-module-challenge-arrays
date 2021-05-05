@@ -1,2 +1,1 @@
-// const removeFlavorByName = (ar,idx) => [...ar.slice(0,idx), ...ar.slice(idx+1)];
-const removeFlavorByName = (ar,idx) => ar.slice(0,idx).concat(ar.slice(idx+1));
+const getAverageWordLength = ar => ar.map(word => word.split(' ').length).reduce((acc,cur) => acc + cur) / ar.length

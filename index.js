@@ -173,10 +173,7 @@ Use the getAverageWordLength function below to do the following:
 
     For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
-
-function getAverageWordLength(/*code here*/){
-    /*code here*/
-}
+const getAverageWordLength = ar => ar.map(word => word.split(' ').length).reduce((acc,cur) => acc + cur) / ar.length
 
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
