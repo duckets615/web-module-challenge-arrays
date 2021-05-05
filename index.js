@@ -45,9 +45,7 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(ar){
-    return [...ar]
-}    
+const copy = ar => [...ar]    
 
 
 
@@ -79,11 +77,12 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(ar,str){
-   ar.unshift(str)
-   return ar
-}
-
+// function addFlavor(ar,str){
+//     ar.unshift(str)
+//     return ar
+// }
+// const addFlavor = (ar,str) => [str].concat(ar)
+const addFlavor = (ar,str) => [str,...ar]
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
 
