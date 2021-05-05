@@ -282,25 +282,24 @@ const regionalFlavors = [
     "Caramel 'n' Cookies"
 ]
 
-console.log(getRandomFlavors(newFlavors, regionalFlavors, seasonalFlavors, originalFlavors));
 
-// /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
-// function foo(){
-//     return 'bar';
-// }
+/* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
+function foo(){
+    return 'bar';
+}
 
-// export default{
-//     foo,
-//     is31Flavors,
-//     addFlavor,
-//     removeLastFlavor,
-//     getFlavorByIndex,
-//     removeFlavorByName,
-//     copy,
-//     filterByWord,
-//     getAverageWordLength,
-//     getRandomFlavors
-// }
+export default{
+    foo,
+    is31Flavors,
+    addFlavor,
+    removeLastFlavor,
+    getFlavorByIndex,
+    removeFlavorByName,
+    copy,
+    filterByWord,
+    getAverageWordLength,
+    getRandomFlavors
+}
 
 
 
