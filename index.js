@@ -188,9 +188,17 @@ Use the getRandomFlavors function and new arrays below to do the following:
     For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
 */
 
+const randomNum = () => [Math.round(Math.random() * 3), Math.round(Math.random() * 31)]
 
-function getRandomFlavors(/*code here*/){
-    /*code here*/
+function getRandomFlavors(ar1,ar2,ar3,ar4){
+    let array = [];
+    let combine = [ar1,ar2,ar3,ar4];
+    while (array.length < 32){
+        let idx = randomNum();
+        let [i,j] = idx;
+        if (combine[i][j] !== undefined && !array.includes(combine[i][j])) array.push(combine[i][j]);
+    }
+    return array; 
 }
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
@@ -274,25 +282,25 @@ const regionalFlavors = [
     "Caramel 'n' Cookies"
 ]
 
+console.log(getRandomFlavors(newFlavors, regionalFlavors, seasonalFlavors, originalFlavors));
 
+// /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
+// function foo(){
+//     return 'bar';
+// }
 
-/* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
-function foo(){
-    return 'bar';
-}
-
-export default{
-    foo,
-    is31Flavors,
-    addFlavor,
-    removeLastFlavor,
-    getFlavorByIndex,
-    removeFlavorByName,
-    copy,
-    filterByWord,
-    getAverageWordLength,
-    getRandomFlavors
-}
+// export default{
+//     foo,
+//     is31Flavors,
+//     addFlavor,
+//     removeLastFlavor,
+//     getFlavorByIndex,
+//     removeFlavorByName,
+//     copy,
+//     filterByWord,
+//     getAverageWordLength,
+//     getRandomFlavors
+// }
 
 
 
